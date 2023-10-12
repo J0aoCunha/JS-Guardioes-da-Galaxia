@@ -14,12 +14,12 @@ const menu = document.getElementById("menu")
 
 function ChangeStatusButton() {
 
-    const back = document.getElementById('button_back');
+    const prev = document.getElementById('button_back');
     const isFirst = activeMembers == 0;
-    back.disabled = isFirst;
+    prev.disabled = isFirst;
 
     const next = document.getElementById('button_next')
-    const isLast = activeMembers == members.length() - 1;
+    const isLast = activeMembers == members.length - 1;
     next.disabled = isLast;
 }
 
@@ -30,6 +30,8 @@ function navigationMembers(direction) {
     console.log(activeMembers, member);
 
     images.style.transform = `translateY(${-100 * activeMembers}vh)`
+
+    ChangeStatusButton()
 }
 
 function chageMenu() {

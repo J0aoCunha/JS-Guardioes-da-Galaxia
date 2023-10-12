@@ -23,11 +23,27 @@
             <img src="./assets/members/groot.png" alt="" loading="lazy">
         </div>
     </div>
-    <div class="btn">
-        <button type="button" onclick="navigationMembers(-1)"> Voltar </button>
-        <button type="button" onclick="navigationMembers(1)"> Avançar </button>
-    </div>
+<div class="app">
+    <header>
+        <img src="./assets/logo.png" alt="">
 
+        <button type="button" id="menu" onclick="chageMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <main>
+        <h1>Peter Quill</h1>
+
+        <div>
+            <button type="button" onclick="navigationMembers(-1)" id="button_back" disabled> Voltar </button>
+            <button type="button" onclick="navigationMembers(1)" id="button_next"> Avançar </button>
+        </div>
+    </main>
+</div>
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/changeName.js"></script>
