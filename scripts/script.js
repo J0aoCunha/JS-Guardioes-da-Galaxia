@@ -1,7 +1,7 @@
 const members = [
     { name: "Peter Quill", id: "Peter" },
     { name: "Gamora Titan", id: "gamora" },
-    { name: "Drax o destruidor", id: "Drax" },
+    { name: "Drax o destruidor", id: "drax" },
     { name: "Mantis", id: "mantis" },
     { name: "Rocket Raccoon", id: "rocket" },
     { name: "I am Groot", id: "groot" }
@@ -9,8 +9,9 @@ const members = [
 
 let activeMembers = 0;
 
-const images = document.getElementById("images")
-const menu = document.getElementById("menu")
+const images = document.getElementById("images");
+const menu = document.getElementById("menu");
+const membersname = document.getElementById("members__name");
 
 function ChangeStatusButton() {
 
@@ -27,13 +28,14 @@ function navigationMembers(direction) {
     activeMembers += direction;
 
     const member = members[activeMembers];
-    console.log(activeMembers, member);
 
     images.style.transform = `translateY(${-100 * activeMembers}vh)`
+    membersname.classList = member.id;
 
-    ChangeStatusButton()
+
+    ChangeStatusButton();
 }
 
-function chageMenu() {
-    menu.classList.toggle('active')
+function changeMenu() {
+    menu.classList.toggle('active');
 }
