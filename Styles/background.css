@@ -2,12 +2,11 @@
     z-index: -1;
     position: relative;
 
-    width: 100vw;
-    height: 100vh;
 }
 
 #images {
     position: absolute;
+    transition: all 0.8s;
 }
 
 
