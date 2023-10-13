@@ -1,5 +1,5 @@
 const members = [
-    { name: "Peter Quill", id: "Peter" },
+    { name: "Peter Quill", id: "peter" },
     { name: "Gamora Titan", id: "gamora" },
     { name: "Drax o destruidor", id: "drax" },
     { name: "Mantis", id: "mantis" },
@@ -11,7 +11,7 @@ let activeMembers = 0;
 
 const images = document.getElementById("images");
 const menu = document.getElementById("menu");
-const membersname = document.getElementById("members__name");
+const membersName = document.getElementById("member__name");
 
 function ChangeStatusButton() {
 
@@ -22,18 +22,20 @@ function ChangeStatusButton() {
     const next = document.getElementById('button_next')
     const isLast = activeMembers == members.length - 1;
     next.disabled = isLast;
+
 }
 
 function navigationMembers(direction) {
-    activeMembers += direction;
+    activeMembers = activeMembers + direction;
 
     const member = members[activeMembers];
 
-    images.style.transform = `translateY(${-100 * activeMembers}vh)`
-    membersname.classList = member.id;
-
-
+    images.style.transform = `translateY(${-100 * activeMembers}vh)`;
+    membersName.classList = member.id;
     ChangeStatusButton();
+    changeName(member.name); 
+
+
 }
 
 function changeMenu() {
