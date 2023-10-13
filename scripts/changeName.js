@@ -7,7 +7,6 @@ function randomLetter() {
 }
 
 function changeName(newName) {
-    console.log({ newName });
     const name = document.getElementById("member__name");
 
     name.innerText = newName

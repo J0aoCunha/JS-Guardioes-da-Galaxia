@@ -32,6 +32,7 @@ function navigationMembers(direction) {
 
     images.style.transform = `translateY(${-100 * activeMembers}vh)`;
     membersName.classList = member.id;
+
     ChangeStatusButton();
     changeName(member.name); 
 

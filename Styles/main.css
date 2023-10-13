@@ -42,10 +42,9 @@ main div button svg path {
     letter-spacing: 6px;
     font-weight: 400;
 
-    padding-right: 10px;
     color: transparent;
     font-family: 'Star Guard Italic';
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 #member__name.peter {
