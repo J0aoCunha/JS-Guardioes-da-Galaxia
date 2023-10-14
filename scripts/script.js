@@ -11,6 +11,7 @@ let activeMembers = 0;
 
 const images = document.getElementById("images");
 const menu = document.getElementById("menu");
+const navigation = document.getElementById("navigation");
 const membersName = document.getElementById("member__name");
 
 function ChangeStatusButton() {
@@ -44,8 +45,10 @@ function navigationMembers(direction) {
 
 function changeMenu() {
     menu.classList.toggle('active');
+    navigation.classList.toggle('active')
 }
 
 function setMembers(membersId) {
     changeMembers(membersId)
+    changeMenu()
 }
