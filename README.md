@@ -19,7 +19,7 @@ Este projeto é feito para treinar e melhorar os conseitos **JavaScript**, **HTM
 ## 📔 Conhecimentos abordados
 
 - [x] Uso semântico do HTML
-- [x] Uso do CSS Flexbox
+- [x] Uso do CSS Flexbox e Grid Template
 - [x] Carrousel de imagens
 - [x] Menu lateral
 - [x] Carregamento de fonte externa
