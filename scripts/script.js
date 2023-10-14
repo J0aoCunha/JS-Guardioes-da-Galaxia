@@ -25,8 +25,9 @@ function ChangeStatusButton() {
 
 }
 
-function navigationMembers(direction) {
-    activeMembers = activeMembers + direction;
+function changeMembers(membersId) {
+
+    activeMembers = membersId
 
     const member = members[activeMembers];
 
@@ -34,11 +35,17 @@ function navigationMembers(direction) {
     membersName.classList = member.id;
 
     ChangeStatusButton();
-    changeName(member.name); 
+    changeName(member.name);
+}
 
-
+function navigationMembers(direction) {
+    changeMembers(activeMembers + direction)
 }
 
 function changeMenu() {
     menu.classList.toggle('active');
+}
+
+function setMembers(membersId) {
+    changeMembers(membersId)
 }
