@@ -2,6 +2,8 @@
 @import url(/Styles/main.css);
 @import url(/Styles/header.css);
 @import url(/Styles/font.css);
+@import url(/Styles/navigation.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -26,8 +28,8 @@ body {
     color: var(--text);
     font-family: 'Rubik', sans-serif;
     height: 100vh;
-    }
-    
+}
+
 .app {
     display: flex;
     justify-content: space-between;
