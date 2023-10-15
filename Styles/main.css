@@ -76,3 +76,25 @@ main div button svg path {
     background: var(--groot);
     -webkit-background-clip: text;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #member__name {
+        font-size: 90px;
+        letter-spacing: 3px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #member__name {
+        font-size: 85px;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    #member__name {
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
+}

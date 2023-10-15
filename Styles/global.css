@@ -38,3 +38,22 @@ body {
     height: 100vh;
     padding: 40px 80px 80px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .app {
+        padding: 40px 10px 80px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .app {
+        padding: 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .app {
+        padding: 10px;
+    }
+}

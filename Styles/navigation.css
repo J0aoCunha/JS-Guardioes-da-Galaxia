@@ -52,3 +52,24 @@
     opacity: 1;
     transform: translateY(-10px);
 }
+
+@media screen and (max-width: 445px) {
+    #navigation {
+        position: fixed;
+        right: -425px;
+
+        width: 425px;
+        padding: 15px 100px 0;
+    }
+
+    #navigation div {
+
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    #navigation div button img {
+
+        height: 100px;
+    }
+}
